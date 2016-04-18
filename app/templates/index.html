@@ -30,8 +30,19 @@
 
   <body>
 
-    <nav class="navbar custom-nav">
+   <nav class="navbar custom-nav">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav pull-right">
+          <li>
+            <a href="{{ url_for('collection') }}">Browse all</a>
+          </li>
+         
+        </ul>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
+        </div>
 
+      </div>
     </nav>
 
     <div class="container-fluid">
@@ -45,14 +56,13 @@
        
           <br>
 
-          <p>Enter your name to see a student reflection from the camp!</p>
+          <p>Click below to hear a randomly selected reflection from students at the North Cross School ICAT Camp. The students
+            were interviewed by coordinators in groups about their experience. All reflections can be browsed by selecting 'Browse All' in the top right corner.</p>
           <div class="row">
-           <div class="col-md-6 col-md-offset-3">
-           <input type="text" class="form-control" id="nameField" placeholder="Name...">
-           </div>
+           
          </div>
          <br>
-           <a role="button" class="btn btn-default" href="{{ url_for('reflection') }}">Submit</a>
+           <a role="button" class="btn btn-default btn-lg" href="{{ url_for('reflection') }}">Listen to a Random Reflection!</a>
         </div>
       </div>
     </div>
