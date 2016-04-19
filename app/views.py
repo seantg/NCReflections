@@ -70,3 +70,7 @@ def random():
 @app.route('/collection')
 def collection():
 	return render_template('collection.html', files=allFiles)
+
+@app.route('/about')
+def about():
+	return render_template('about.html')
