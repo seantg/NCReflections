@@ -25,5 +25,15 @@
 }
 
 .nc-tile {
-	
+
+}
+@media screen and (max-width: 500px) {
+	.nc-image {
+		height:125px;
+		width:auto;
+	}
+}
+
+.random-button {
+	padding-bottom: 20px;
 }
