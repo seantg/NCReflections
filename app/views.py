@@ -170,7 +170,7 @@ def index():
 
 @app.route('/individual/<reflectionNumber>')
 def individual(reflectionNumber):
-	soundcloudInfo = {'src': allFiles[int(reflectionNumber)][0], 'name': allFiles[int(reflectionNumber)][1]}
+	soundcloudInfo = {'src': allFiles[int(reflectionNumber)][0], 'name': allFiles[int(reflectionNumber)][1], 'author': allFiles[int(reflectionNumber)][2] }
 	return render_template('reflection.html', scInfo=soundcloudInfo)
 
 @app.route('/random')
