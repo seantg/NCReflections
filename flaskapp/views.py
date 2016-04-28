@@ -1,5 +1,5 @@
 from flask import render_template, Flask, request, url_for, redirect
-from app import app
+from flaskapp import app
 from random import randint
 
 
